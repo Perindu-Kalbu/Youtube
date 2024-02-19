@@ -1,0 +1,12 @@
+<body style="background-color: black; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+    <div class="container text-center">
+        <h1 class="display-4 mb-4">YouTube Search Menu</h1>
+        <div class="input-group input-group-lg">
+            <input type="text" class="form-control" placeholder="Search videos..." [(ngModel)]="searchQuery" (keyup.enter)="searchVideos()">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" (click)="searchVideos()">Search</button>
+            </div>
+        </div>
+    </div>
+</body>
+
